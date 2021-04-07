@@ -1,0 +1,15 @@
+<div class="container mt-4">
+    <div class="row col-lg-5 offset-lg-2">
+      <form [formGroup]="tempForm">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1"  formControlName="email" >
+        </div>
+        <div class="mb-3">
+          <input type="file" class="form-control" (change)="setFileObj($event)" >
+        </div>
+        <button type="button" class="btn btn-primary" (click)="handleSubmit()">Submit</button>
+      </form>
+    </div>
+  </div>
+ 
